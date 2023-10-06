@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* .body {
+  height: 500px;
+  width: 700px;
+  background: linear-gradient(to right, #355c7d, #c06c84);
+} */
+.main {
+  color: blue;
+  font-weight: 600;
+  height: 30px;
+  width: 200px;
+  background-color: bisque;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-weight: 900;
+  color: #c06c84;
+  font-size: 20px;
+}

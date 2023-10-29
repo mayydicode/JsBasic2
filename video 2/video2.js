@@ -7,3 +7,5 @@ let a = " Toi la String";
 let text = "Tu hoc JS";
 console.log(text.length);
 console.log(text.replace("JS", "Code"));
+console.log(text.toUpperCase());
+console.log(a);

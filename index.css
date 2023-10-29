@@ -3,19 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* .body {
+.body {
   height: 500px;
   width: 700px;
   background: linear-gradient(to right, #355c7d, #c06c84);
-} */
+}
 .main {
   color: blue;
   font-weight: 600;
-  height: 30px;
+  height: 100px;
   width: 200px;
   background-color: bisque;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
+  padding-top: 30px;
+  padding-left: 30px;
 }
 
 .name {

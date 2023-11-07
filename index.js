@@ -46,7 +46,18 @@ while (i < arrTop4.length) {
     console.log("Top :", i + 1, arrTop4[i]);
   } else if (arrTop4[i].length === 7) {
     console.log("top :", i + 1, arrTop4[i]);
-  } else {
   }
+
   i++;
 }
+
+//--Switch Case--
+
+//--Variable--
+
+//Functions
+
+function sum(a, b) {
+  return a + b;
+}
+console.log("Tong a va b:", sum(1, 2));

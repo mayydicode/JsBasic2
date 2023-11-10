@@ -24,7 +24,7 @@ let pet = {
 // <--Empty,NULL,Underfined-->
 
 // <--For Looops-->
-console.log("Hello world ");
+
 for (let i = 1; i <= 10; i++) {
   // console.log("check variable i:", i);
 }
@@ -35,7 +35,7 @@ for (let i = 1; i <= 10; i++) {
 // }
 
 // <--While/Do While Loops-->
-let arr = ["MU", "Mcty", "Liver", "chelsea"];
+// let arr = ["MU", "Mcty", "Liver", "chelsea"];
 
 // <--If/else-->
 let arrTop4 = ["live", "Chelsea", "MU", "Man city"];
@@ -72,7 +72,7 @@ let arrTop4 = ["live", "Chelsea", "MU", "Man city"];
 let Name = (x, y) => {
   return x + y;
 };
-console.log("Tong:", Name(2, 3));
+// console.log("Tong:", Name(2, 3));
 
 //--Function vs Method--
 
@@ -91,7 +91,7 @@ let sum = (a, b, callback) => {
       clearInterval(timer);
     }
   }, 2000);
-  console.log("check sum i:", i);
+  // console.log("check sum i:", i);
 };
 
 let prinSum = (Message) => {
@@ -100,7 +100,45 @@ let prinSum = (Message) => {
 
 sum(6, 9, prinSum);
 
+//--VD--
 let test = (a, b) => {
   return a + b;
 };
-console.log("Tong cua a va b:", test(1, 3));
+// console.log("Tong cua a va b:", test(1, 3));
+
+//--Filter
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let filter = arr.filter((item, index) => {
+//   return item && item > 5;
+// });
+// console.log(filter);
+
+let array = [
+  { name: "hung", age: 11 },
+  { name: "ngan", age: 12 },
+  { name: "abc", age: 11 },
+  { name: "cvb", age: 12 },
+];
+let filter = array.filter((item, index) => {
+  return item && item.age === 11;
+  // return item && item.name === "abc";
+});
+console.log("Ket qua :", filter);
+
+//--Find
+let find = array.find((item, index) => {
+  return item && item.age === 11;
+  // return item && item.name === "abc";
+});
+console.log("Ket qua :", find);
+//-> ket qua la { name: "hung", age: 11 } (Thoa man Dk dau tien trong mang)
+
+//--Map
+let mang = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let mapmang = mang.filter((item) => {
+  return item > 5;
+});
+console.log("Ket qua la 1:", mang);
+console.log("Ket qua la map2:", mapmang);

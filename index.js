@@ -1,3 +1,5 @@
+// import _ from "lodash";
+
 console.log("hello Mayy");
 let a = " Toi la String";
 // console.log(a);
@@ -140,5 +142,29 @@ let mang = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let mapmang = mang.filter((item) => {
   return item > 5;
 });
+
 console.log("Ket qua la 1:", mang);
 console.log("Ket qua la map2:", mapmang);
+
+//--Reduce--
+
+// let num = [1, 2, 3, 4, 5, 6];
+
+// let num.Reduce((previoiValue, currentValue) => {
+//   return previoiValue + currentValue;
+// },
+// []);
+
+//--sort-- sắp xếp
+
+//--Lodash--
+import _ from "lodash";
+
+let student = {
+  name: "John Doe",
+  age: 20,
+  grades: [90, 85, 88, 95],
+};
+
+let studentName = _.get(student, "name", "Unknown");
+console, log(studentName);
